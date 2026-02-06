@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "m6DxGo31FC8=",
+  "success": true,
+  "projectFilePath": "D:\\IDS system\\IDS system.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Karthik\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.23.0\\microsoft.visualstudio.azure.containers.tools.targets.1.23.0.nupkg.sha512"
+  ],
+  "logs": []
+}

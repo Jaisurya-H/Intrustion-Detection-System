@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>IDS Security Operations Center</title>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <span>🛡 IDS Security Operations Center</span>
+        <span class="live">● LIVE</span>
+    </header>
+
+    <div class="grid">
+
+        <!-- 🔴 ALERTS (MAIN) -->
+        <section class="panel alerts">
+            <h2>🚨 Live Alerts</h2>
+            <ul id="alertList"></ul>
+        </section>
+
+        <!-- 🔵 WIFI USAGE -->
+        <section class="panel traffic">
+            <h2>📡 Wi-Fi Usage</h2>
+            <table>
+                <thead>
+                    <tr><th>IP</th><th>Packets</th><th>Last Seen</th></tr>
+                </thead>
+                <tbody id="trafficTable"></tbody>
+            </table>
+        </section>
+
+        <!-- 🟢 SYSTEM -->
+        <section class="panel system">
+            <h2>⚙ System Overview</h2>
+            <p>Total Packets: <b id="pkt">0</b></p>
+            <p>Total Alerts: <b id="al">0</b></p>
+            <p>Status: <span class="ok">ACTIVE</span></p>
+        </section>
+
+    </div>
+
+    <script>
+        const socket = io();
+        let alertCount = 0;
+
+        socket.on("alert_update", data => {
+            alertCount++;
+            document.getElementById("al").innerText = alertCount;
+
+            const li = document.createElement("li");
+            li.innerHTML = `[${data.time}] ${data.message}`;
+            li.className = "alert";
+            document.getElementById("alertList").prepend(li);
+        });
+
+        socket.on("traffic_update", state => {
+            document.getElementById("pkt").innerText = state.total_packets;
+
+            const table = document.getElementById("trafficTable");
+            table.innerHTML = "";
+
+            for (let ip in state.active_hosts) {
+                const h = state.active_hosts[ip];
+                table.innerHTML += `<tr>
+          <td>${ip}</td>
+          <td>${h.count}</td>
+          <td>${h.last_seen}</td>
+        </tr>`;
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+🛡 Intrusion Detection System (IDS) – Real-Time SOC Dashboard
+
+A real-time, network-based Intrusion Detection System (IDS) with a professional SOC-style dashboard, built using Python, Scapy, Flask, Socket.IO, and Machine Learning.
+
+This project monitors live network traffic, detects suspicious behavior, and visualizes alerts and Wi-Fi usage in real time through a modern web dashboard.
+
+🚀 Key Features
+
+✅ Real-time packet capture using Scapy
+
+✅ Rule-based intrusion detection
+
+✅ Live alert generation and logging
+
+✅ Real-time SOC dashboard using WebSockets
+
+✅ Live Wi-Fi user activity monitoring
+
+✅ System overview metrics (packets, alerts)
+
+✅ Professional dark-themed UI/UX
+
+✅ Industry-style architecture (IDS → Backend → Dashboard)
+
+🏗 System Architecture
+Network Traffic
+      ↓
+IDS Engine (Scapy)
+      ↓
+Flask + Socket.IO Backend
+      ↓
+Real-Time SOC Dashboard (Web UI)
+🧰 Tech Stack
+Backend
+
+Python 3.9+
+
+Scapy
+
+Flask
+
+Flask-SocketIO
+
+python-socketio
+
+requests
+
+Frontend
+
+HTML5
+
+CSS3 (SOC-style UI)
+
+JavaScript
+
+Socket.IO client
+
+Optional (ML Module)
+
+Pandas
+
+NumPy
+
+Scikit-learn (Isolation Forest)
+
+📂 Project Structure
+IDS-system/
+│
+├── ids_realtime.py          # IDS engine (packet capture + detection)
+├── realtime_app.py          # Flask + Socket.IO backend
+├── alerts.log               # Logged alerts
+│
+├── templates/
+│   └── dashboard.html       # SOC dashboard UI
+│
+├── static/
+│   └── style.css            # Dashboard styling
+│
+└── README.md
+⚙ Prerequisites
+
+Make sure the following are installed:
+
+Python 3.9 or higher
+
+Npcap (Windows users)
+
+Enable WinPcap compatibility
+
+Restart after installation
+
+Administrator privileges (for packet capture)
+
+📦 Installation Steps
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/ids-soc-dashboard.git
+cd ids-soc-dashboard
+2️⃣ Install Required Python Libraries
+pip install flask flask-socketio eventlet python-socketio requests scapy
+
+(Optional – for ML module)
+
+pip install pandas numpy scikit-learn
+3️⃣ Verify Installations
+python -c "import flask, socketio, scapy, requests; print('All dependencies installed')"
+▶ How to Run the Project (IMPORTANT)
+🔹 Step 1: Start the Backend Server
+
+Open Terminal 1:
+
+python realtime_app.py
+
+Expected output:
+
+Running on http://127.0.0.1:5000
+Dashboard connected
+
+⚠️ Do not close this terminal.
+
+🔹 Step 2: Start the IDS Engine
+
+Open Terminal 2 as Administrator:
+
+python ids_realtime.py
+
+Expected output:
+
+Connected to real-time dashboard backend
+IDS running with full SOC integration...
+🔹 Step 3: Open the Dashboard
+
+Open your browser and go to:
+
+http://127.0.0.1:5000
+🔹 Step 4: Generate Network Traffic
+
+In another terminal:
+
+ping google.com -t
+✅ What You Will See
+
+🔴 Live Alerts appearing instantly
+
+🔵 Wi-Fi usage table updating in real time
+
+🟢 System metrics (packet count, alerts)
+
+No page refresh required
+
+SOC-style professional UI
+
+🧪 Detection Logic
+
+Counts packets per source IP
+
+If packet rate exceeds threshold → alert triggered
+
+Alerts are:
+
+Printed in terminal
+
+Logged to alerts.log
+
+Sent to dashboard in real time
+
+🎓 Academic & Industry Relevance
+
+Network-based IDS (NIDS)
+
+Real-time WebSocket communication
+
+SOC-style dashboard design
+
+Suitable for:
+
+Final-year projects
+
+Cybersecurity portfolios
+
+IDS / SOC demonstrations
+
+🔮 Future Enhancements
+
+ML-based live anomaly detection
+
+Traffic & alert graphs
+
+Device fingerprinting
+
+IPS (automatic blocking)
+
+Cloud deployment
+
+📜 License
+
+This project is for educational and research purposes.

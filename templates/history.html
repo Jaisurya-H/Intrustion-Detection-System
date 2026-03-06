@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Attack History</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body {
+            padding: 40px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #222a5a;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background: #141a3a;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>📜 Attack History</h2>
+    <ul>
+        {% for log in logs %}
+        <li>{{ log.strip() }}</li>
+        {% else %}
+        <li>No alerts recorded yet.</li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>

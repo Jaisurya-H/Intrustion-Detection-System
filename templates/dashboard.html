@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDS Security Operations Center</title>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Fira+Code:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="logo-area">
+            <span class="shield-icon">🛡️</span>
+            <h1>IDS Security Operations Center</h1>
+        </div>
+        <div class="status-indicator">
+            <span class="live-dot"></span>
+            <span class="live-text">SYSTEM LIVE</span>
+        </div>
+    </header>
+
+    <div class="dashboard-wrap">
+
+        <!-- KPI Row -->
+        <div class="kpi-row">
+            <div class="kpi-card">
+                <h3>Total Packets Evaluated</h3>
+                <div class="kpi-value" id="pkt">0</div>
+            </div>
+            <div class="kpi-card">
+                <h3>Active Alerts Triggered</h3>
+                <div class="kpi-value warning-text" id="al">0</div>
+            </div>
+            <div class="kpi-card">
+                <h3>IPS Enforcement Status</h3>
+                <div class="kpi-value success-text">ACTIVE <span style="font-size:14px; color:#a0a0b0;">(Blocking
+                        Enabled)</span></div>
+            </div>
+            <div class="kpi-card flex-center">
+                <a href="/history" class="btn-history">View Attack History 📜</a>
+            </div>
+        </div>
+
+        <div class="main-grid">
+
+            <!-- Traffic Graph panel spans top -->
+            <section class="panel chart-panel">
+                <div class="panel-header">
+                    <h2>📊 Network Traffic Flow (Real-Time)</h2>
+                </div>
+                <div class="chart-container">
+                    <canvas id="trafficChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Alerts Panel -->
+            <section class="panel alerts-panel">
+                <div class="panel-header">
+                    <h2>🚨 Threat Detections</h2>
+                    <span class="pulse-icon"></span>
+                </div>
+                <ul id="alertList" class="alert-list"></ul>
+            </section>
+
+            <!-- Middle Column: Wi-Fi Usage -->
+            <section class="panel traffic-list-panel">
+                <div class="panel-header">
+                    <h2>📡 Active Host Telemetry</h2>
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Source IP</th>
+                                <th>Packets</th>
+                                <th>Last Seen</th>
+                            </tr>
+                        </thead>
+                        <tbody id="trafficTable"></tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Right Column: Blocked IPs -->
+            <section class="panel blocked-panel">
+                <div class="panel-header">
+                    <h2>🚫 Firewall Enforcement</h2>
+                </div>
+                <ul id="blockedList" class="blocked-list"></ul>
+            </section>
+
+        </div>
+    </div>
+
+    <script>
+        const socket = io();
+        let alertCount = 0;
+
+        // --- Alert Handling ---
+        socket.on("alert_update", data => {
+            alertCount++;
+            document.getElementById("al").innerText = alertCount;
+
+            const li = document.createElement("li");
+            li.className = `alert-item severity-${data.severity.toLowerCase()}`;
+
+            const riskHtml = data.risk_score ? `<div class="risk-badge">Risk Score: ${data.risk_score}/100</div>` : '';
+
+            li.innerHTML = `
+                <div class="alert-timer">[${data.time}]</div>
+                <div class="alert-body">
+                    <span class="lbl-severity">${data.severity}</span>
+                     ${data.message}
+                </div>
+                ${riskHtml}
+            `;
+
+            document.getElementById("alertList").prepend(li);
+        });
+
+        // --- Blocked IPs Handling ---
+        socket.on("blocked_update", data => {
+            const list = document.getElementById("blockedList");
+            list.innerHTML = "";
+
+            data.forEach(ip => {
+                list.innerHTML += `<li class="blocked-item"><span class="blocked-icon">❌</span> <span class="mono">${ip}</span></li>`;
+            });
+        });
+
+        // --- Chart.js Configuration ---
+        Chart.defaults.color = '#8e9cbb';
+        Chart.defaults.font.family = "'Inter', sans-serif";
+
+        const ctx = document.getElementById('trafficChart').getContext('2d');
+        const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+        gradient.addColorStop(0, 'rgba(0, 255, 179, 0.4)');
+        gradient.addColorStop(1, 'rgba(0, 255, 179, 0.0)');
+
+        const trafficChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [{
+                    label: 'Packets / Sec',
+                    data: [],
+                    borderColor: '#00ffb3',
+                    backgroundColor: gradient,
+                    borderWidth: 2,
+                    pointBackgroundColor: '#00ffb3',
+                    pointRadius: 2,
+                    pointHoverRadius: 5,
+                    fill: true,
+                    tension: 0.4 // Smooth curves
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        mode: 'index',
+                        intersect: false,
+                        backgroundColor: 'rgba(10, 15, 30, 0.9)',
+                        titleColor: '#00ffb3',
+                        bodyFont: { family: "'Fira Code', monospace" }
+                    }
+                },
+                scales: {
+                    x: {
+                        grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                        ticks: { maxRotation: 0 }
+                    },
+                    y: {
+                        grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // --- Traffic Telemetry Handling ---
+        socket.on("traffic_update", state => {
+            // Update KPI
+            document.getElementById("pkt").innerText = state.total_packets.toLocaleString();
+
+            // Update Table
+            const table = document.getElementById("trafficTable");
+            table.innerHTML = "";
+            for (let ip in state.active_hosts) {
+                const h = state.active_hosts[ip];
+                table.innerHTML += `<tr>
+                  <td class="mono">${ip}</td>
+                  <td class="num">${h.count}</td>
+                  <td>${h.last_seen}</td>
+                </tr>`;
+            }
+
+            // Update Chart
+            const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+            trafficChart.data.labels.push(time);
+            trafficChart.data.datasets[0].data.push(state.total_packets);
+
+            if (trafficChart.data.labels.length > 25) { // Show slightly more data points
+                trafficChart.data.labels.shift();
+                trafficChart.data.datasets[0].data.shift();
+            }
+
+            trafficChart.update('none'); // Update without full animation loop for better performance
+        });
+    </script>
+</body>
+
+</html>

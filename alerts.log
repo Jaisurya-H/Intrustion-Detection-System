@@ -1,0 +1,292 @@
+[2026-01-20 21:06:59] ALERT: 151.101.38.172 sent 89 packets in 10 seconds
+[2026-01-20 21:06:59] ALERT: 10.158.223.68 sent 77 packets in 10 seconds
+[2026-01-20 21:06:59] ALERT: 10.158.223.101 sent 27 packets in 10 seconds
+[2026-02-02 18:55:48] ALERT: 10.158.223.68 sent 46 packets in 10 seconds
+[2026-02-02 18:55:48] ALERT: 20.44.239.154 sent 36 packets in 10 seconds
+[2026-02-02 18:56:03] ALERT: 4.240.189.71 sent 19804 packets in 10 seconds
+[2026-02-02 18:56:03] ALERT: 10.158.223.68 sent 1683 packets in 10 seconds
+[2026-02-02 18:56:15] ALERT: 10.158.223.68 sent 22 packets in 10 seconds
+[2026-02-02 18:56:25] ALERT: 10.158.223.68 sent 26 packets in 10 seconds
+[2026-02-02 18:56:36] ALERT: 10.158.223.68 sent 174 packets in 10 seconds
+[2026-02-02 18:56:36] ALERT: 20.165.94.54 sent 139 packets in 10 seconds
+[2026-02-02 18:56:46] ALERT: 10.158.223.68 sent 92 packets in 10 seconds
+[2026-02-02 18:56:46] ALERT: 52.140.118.28 sent 64 packets in 10 seconds
+[2026-02-02 18:56:56] ALERT: 10.158.223.68 sent 87 packets in 10 seconds
+[2026-02-02 18:56:56] ALERT: 52.167.249.196 sent 30 packets in 10 seconds
+[23:41:25] ALERT: High traffic from 10.158.223.68 (29 packets)
+[23:41:25] ALERT: High traffic from 10.158.223.101 (29 packets)
+[23:43:26] ALERT: High traffic from 10.158.223.68 (42 packets)
+[23:43:26] ALERT: High traffic from 10.158.223.101 (43 packets)
+[23:44:25] ALERT: High traffic from 10.158.223.68 (36 packets)
+[23:44:25] ALERT: High traffic from 10.158.223.101 (36 packets)
+[23:44:41] ALERT: High traffic from 10.158.223.68 (41 packets)
+[21:37:00] ALERT: High traffic from 10.158.223.68 (31 packets)
+[21:37:00] ALERT: High traffic from 10.158.223.101 (33 packets)
+[21:42:57] ALERT: High traffic from 10.158.223.68 (21 packets)
+[19:31:04] CRITICAL ALERT: Traffic Flood detected from 49.44.131.146 (765 packets)
+[19:31:04] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (596 packets)
+[19:31:04] CRITICAL ALERT: Traffic Flood detected from 49.44.131.147 (448 packets)
+[19:31:14] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (619 packets)
+[19:31:14] CRITICAL ALERT: Traffic Flood detected from 49.44.131.146 (486 packets)
+[19:31:14] CRITICAL ALERT: Traffic Flood detected from 49.44.131.147 (803 packets)
+[19:31:24] CRITICAL ALERT: Traffic Flood detected from 49.44.131.146 (651 packets)
+[19:31:24] CRITICAL ALERT: Traffic Flood detected from 49.44.131.147 (732 packets)
+[19:31:24] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (702 packets)
+[19:31:24] MEDIUM ALERT: Traffic Flood detected from 34.54.84.110 (36 packets)
+[19:31:34] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (482 packets)
+[19:31:34] CRITICAL ALERT: Traffic Flood detected from 49.44.131.147 (484 packets)
+[19:31:34] CRITICAL ALERT: Traffic Flood detected from 49.44.131.146 (428 packets)
+[19:42:10] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (62 packets)
+[19:42:10] MEDIUM ALERT: Traffic Flood detected from 98.70.192.224 (23 packets)
+[19:42:45] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (23 packets)
+[19:43:47] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (274 packets)
+[19:43:47] CRITICAL ALERT: Traffic Flood detected from 184.28.109.13 (240 packets)
+[19:43:57] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (148 packets)
+[19:43:57] HIGH ALERT: Traffic Flood detected from 184.28.109.13 (74 packets)
+[19:44:07] CRITICAL ALERT: Traffic Flood detected from 184.28.109.13 (247 packets)
+[19:44:07] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (248 packets)
+[19:44:18] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (642 packets)
+[19:44:18] CRITICAL ALERT: Traffic Flood detected from 184.28.109.13 (396 packets)
+[19:44:28] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (404 packets)
+[19:44:28] CRITICAL ALERT: Traffic Flood detected from 184.28.109.13 (277 packets)
+[19:44:28] CRITICAL ALERT: Traffic Flood detected from 13.126.23.69 (107 packets)
+[19:56:42] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (45 packets)
+[19:56:42] MEDIUM ALERT: Traffic Flood detected from 51.132.193.104 (26 packets)
+[19:56:52] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (47 packets)
+[19:56:52] MEDIUM ALERT: Traffic Flood detected from 216.239.32.116 (23 packets)
+[19:57:03] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (37 packets)
+[19:57:13] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (66 packets)
+[19:57:13] MEDIUM ALERT: Traffic Flood detected from 23.41.121.22 (29 packets)
+[19:57:27] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (41 packets)
+[19:57:27] HIGH ALERT: Traffic Flood detected from 23.55.47.32 (46 packets)
+[19:57:38] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (88 packets)
+[19:57:38] HIGH ALERT: Traffic Flood detected from 8.8.8.8 (56 packets)
+[19:57:38] MEDIUM ALERT: Traffic Flood detected from 23.213.208.65 (33 packets)
+[19:57:48] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (27 packets)
+[19:57:59] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (39 packets)
+[19:58:10] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (23 packets)
+[19:58:45] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (34 packets)
+[19:59:38] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (76 packets)
+[19:59:38] MEDIUM ALERT: Traffic Flood detected from 216.239.32.116 (23 packets)
+[19:59:38] MEDIUM ALERT: Traffic Flood detected from 20.42.65.85 (34 packets)
+[19:59:58] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (52 packets)
+[19:59:58] HIGH ALERT: Traffic Flood detected from 23.55.47.32 (53 packets)
+[20:00:09] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (31 packets)
+[20:00:09] MEDIUM ALERT: Traffic Flood detected from 216.239.32.116 (31 packets)
+[20:01:46] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (34 packets)
+[20:01:46] MEDIUM ALERT: Traffic Flood detected from 20.42.73.24 (30 packets)
+[20:02:25] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (36 packets)
+[20:02:25] MEDIUM ALERT: Traffic Flood detected from 20.42.72.131 (32 packets)
+[20:02:35] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (24 packets)
+[20:03:00] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (34 packets)
+[20:03:11] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (125 packets)
+[20:03:11] CRITICAL ALERT: Traffic Flood detected from 13.204.106.34 (116 packets)
+[23:20:51] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (56 packets)
+[23:20:52] HIGH ALERT: Traffic Flood detected from 34.54.84.110 (62 packets)
+[23:21:01] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (219 packets)
+[23:21:02] MEDIUM ALERT: Traffic Flood detected from 8.8.8.8 (29 packets)
+[23:21:02] CRITICAL ALERT: Traffic Flood detected from 57.155.141.115 (105 packets)
+[23:21:02] MEDIUM ALERT: Traffic Flood detected from 20.42.65.93 (28 packets)
+[23:21:11] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (82 packets)
+[23:21:12] MEDIUM ALERT: Traffic Flood detected from 8.8.8.8 (33 packets)
+[23:21:12] MEDIUM ALERT: Traffic Flood detected from 172.64.155.209 (29 packets)
+[23:21:22] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (89 packets)
+[23:21:22] MEDIUM ALERT: Traffic Flood detected from 34.54.84.110 (35 packets)
+[23:21:22] MEDIUM ALERT: Traffic Flood detected from 216.239.32.223 (26 packets)
+[23:21:22] MEDIUM ALERT: Traffic Flood detected from 142.251.43.206 (25 packets)
+[23:21:32] MEDIUM ALERT: Traffic Flood detected from 216.239.32.223 (27 packets)
+[23:21:32] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (53 packets)
+[23:21:42] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (23 packets)
+[23:21:52] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (72 packets)
+[23:21:53] HIGH ALERT: Traffic Flood detected from 34.54.84.110 (62 packets)
+[23:22:04] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (93 packets)
+[23:22:04] CRITICAL ALERT: Traffic Flood detected from 49.44.237.162 (406 packets)
+[23:22:14] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (78 packets)
+[23:22:14] MEDIUM ALERT: Traffic Flood detected from 57.144.169.32 (35 packets)
+[23:22:14] MEDIUM ALERT: Traffic Flood detected from 8.8.8.8 (27 packets)
+[23:22:25] MEDIUM ALERT: Traffic Flood detected from 34.54.84.110 (39 packets)
+[23:22:25] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (54 packets)
+[23:22:35] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (35 packets)
+[23:22:45] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (51 packets)
+[23:22:45] HIGH ALERT: Traffic Flood detected from 34.54.84.110 (55 packets)
+[23:22:56] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (105 packets)
+[23:22:56] MEDIUM ALERT: Traffic Flood detected from 57.144.169.32 (32 packets)
+[23:22:56] HIGH ALERT: Traffic Flood detected from 8.8.8.8 (44 packets)
+[23:23:19] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (64 packets)
+[23:23:19] MEDIUM ALERT: Traffic Flood detected from 34.54.84.110 (40 packets)
+[23:23:40] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (40 packets)
+[23:23:51] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (151 packets)
+[23:23:52] MEDIUM ALERT: Traffic Flood detected from 8.8.4.4 (34 packets)
+[23:23:52] HIGH ALERT: Traffic Flood detected from 34.54.84.110 (60 packets)
+[23:23:52] HIGH ALERT: Traffic Flood detected from 23.202.229.23 (49 packets)
+[23:24:01] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (47 packets)
+[23:24:24] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (44 packets)
+[23:24:24] MEDIUM ALERT: Traffic Flood detected from 34.54.84.110 (39 packets)
+[23:24:44] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (82 packets)
+[23:24:44] MEDIUM ALERT: Traffic Flood detected from 8.8.8.8 (26 packets)
+[23:24:44] MEDIUM ALERT: Traffic Flood detected from 34.54.84.110 (38 packets)
+[23:24:54] MEDIUM ALERT: Traffic Flood detected from 34.54.84.110 (22 packets)
+[23:24:54] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (34 packets)
+[23:34:53] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (93 packets)
+[23:34:53] HIGH ALERT: Traffic Flood detected from 34.54.84.110 (63 packets)
+[23:35:25] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (72 packets)
+[23:35:25] MEDIUM ALERT: Traffic Flood detected from 34.54.84.110 (33 packets)
+[23:35:25] MEDIUM ALERT: Traffic Flood detected from 8.8.4.4 (29 packets)
+[23:35:36] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (133 packets)
+[23:35:36] HIGH ALERT: Traffic Flood detected from 8.8.8.8 (59 packets)
+[23:35:36] MEDIUM ALERT: Traffic Flood detected from 172.64.155.209 (22 packets)
+[23:46:04] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (28 packets) | Risk Score: 40
+[23:46:14] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (21 packets) | Risk Score: 40
+[23:46:24] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (102 packets) | Risk Score: 90
+[23:46:24] MEDIUM ALERT: Traffic Flood detected from 34.54.84.110 (40 packets) | Risk Score: 40
+[23:46:34] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (77 packets) | Risk Score: 70
+[23:46:44] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (43 packets) | Risk Score: 70
+[23:46:44] MEDIUM ALERT: Traffic Flood detected from 34.54.84.110 (38 packets) | Risk Score: 40
+[23:54:31] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (24 packets) | Risk Score: 40
+[23:54:41] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (61 packets) | Risk Score: 70
+[23:54:41] HIGH ALERT: Rare Port Activity detected from 8.8.4.4
+[23:54:41] HIGH ALERT: Rare Port Activity detected from 142.250.77.99
+[23:54:52] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (55 packets) | Risk Score: 70
+[23:54:52] HIGH ALERT: Traffic Flood detected from 34.54.84.110 (62 packets) | Risk Score: 70
+[23:54:52] HIGH ALERT: Rare Port Activity detected from 34.54.84.110
+[23:55:02] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (103 packets) | Risk Score: 90
+[23:55:02] HIGH ALERT: Traffic Flood detected from 20.42.65.94 (50 packets) | Risk Score: 70
+[23:55:02] MEDIUM ALERT: Traffic Flood detected from 142.250.182.65 (23 packets) | Risk Score: 40
+[23:55:02] HIGH ALERT: Rare Port Activity detected from 8.8.4.4
+[23:55:02] HIGH ALERT: Rare Port Activity detected from 20.42.65.94
+[23:55:02] HIGH ALERT: Rare Port Activity detected from 216.239.32.223
+[23:55:02] HIGH ALERT: Rare Port Activity detected from 142.250.182.65
+[23:55:13] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (42 packets) | Risk Score: 70
+[23:55:13] HIGH ALERT: Rare Port Activity detected from 8.8.8.8
+[23:55:23] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (74 packets) | Risk Score: 70
+[23:55:23] MEDIUM ALERT: Traffic Flood detected from 34.54.84.110 (39 packets) | Risk Score: 40
+[23:55:23] MEDIUM ALERT: Traffic Flood detected from 8.8.4.4 (30 packets) | Risk Score: 40
+[23:55:23] HIGH ALERT: Rare Port Activity detected from 34.54.84.110
+[23:55:23] HIGH ALERT: Rare Port Activity detected from 8.8.4.4
+[23:55:35] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (25 packets) | Risk Score: 40
+[23:55:45] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (49 packets) | Risk Score: 70
+[23:55:45] HIGH ALERT: Traffic Flood detected from 34.54.84.110 (43 packets) | Risk Score: 70
+[23:55:45] HIGH ALERT: Rare Port Activity detected from 216.239.32.223
+[23:55:45] HIGH ALERT: Rare Port Activity detected from 34.54.84.110
+[23:55:56] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (67 packets) | Risk Score: 70
+[23:55:56] MEDIUM ALERT: Traffic Flood detected from 8.8.4.4 (35 packets) | Risk Score: 40
+[23:55:56] HIGH ALERT: Rare Port Activity detected from 8.8.4.4
+[23:56:08] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (37 packets) | Risk Score: 40
+[23:56:18] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (63 packets) | Risk Score: 70
+[23:56:18] MEDIUM ALERT: Traffic Flood detected from 34.54.84.110 (37 packets) | Risk Score: 40
+[23:56:18] HIGH ALERT: Rare Port Activity detected from 142.250.207.78
+[23:56:18] HIGH ALERT: Rare Port Activity detected from 34.54.84.110
+[23:56:18] HIGH ALERT: Rare Port Activity detected from 104.18.32.47
+[23:56:28] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (236 packets) | Risk Score: 90
+[23:56:28] HIGH ALERT: Traffic Flood detected from 216.239.32.223 (47 packets) | Risk Score: 70
+[23:56:28] CRITICAL ALERT: Traffic Flood detected from 23.223.42.236 (141 packets) | Risk Score: 90
+[23:56:28] HIGH ALERT: Traffic Flood detected from 8.8.4.4 (71 packets) | Risk Score: 70
+[23:56:28] MEDIUM ALERT: Traffic Flood detected from 23.216.157.62 (23 packets) | Risk Score: 40
+[23:56:28] CRITICAL ALERT: Traffic Flood detected from 23.202.229.22 (141 packets) | Risk Score: 90
+[23:56:28] HIGH ALERT: Rare Port Activity detected from 216.239.32.223
+[23:56:28] HIGH ALERT: Rare Port Activity detected from 23.223.42.236
+[23:56:28] HIGH ALERT: Rare Port Activity detected from 8.8.4.4
+[23:56:28] HIGH ALERT: Rare Port Activity detected from 23.216.157.62
+[23:56:28] HIGH ALERT: Rare Port Activity detected from 23.202.229.22
+[23:56:38] MEDIUM ALERT: Traffic Flood detected from 49.44.116.46 (25 packets) | Risk Score: 40
+[23:56:38] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (390 packets) | Risk Score: 90
+[23:56:38] CRITICAL ALERT: Traffic Flood detected from 216.239.38.223 (213 packets) | Risk Score: 90
+[23:56:38] MEDIUM ALERT: Traffic Flood detected from 172.217.24.110 (22 packets) | Risk Score: 40
+[23:56:38] HIGH ALERT: Rare Port Activity detected from 49.44.116.46
+[23:56:38] HIGH ALERT: Rare Port Activity detected from 216.239.38.223
+[23:56:38] HIGH ALERT: Rare Port Activity detected from 8.8.4.4
+[23:56:38] HIGH ALERT: Rare Port Activity detected from 172.217.24.110
+[23:56:49] CRITICAL ALERT: Traffic Flood detected from 216.239.38.223 (337 packets) | Risk Score: 90
+[23:56:49] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (818 packets) | Risk Score: 90
+[23:56:49] CRITICAL ALERT: Traffic Flood detected from 216.239.32.223 (238 packets) | Risk Score: 90
+[23:56:49] MEDIUM ALERT: Traffic Flood detected from 8.8.4.4 (30 packets) | Risk Score: 40
+[23:56:49] HIGH ALERT: Traffic Flood detected from 34.54.84.110 (78 packets) | Risk Score: 70
+[23:56:49] HIGH ALERT: Rare Port Activity detected from 216.239.38.223
+[23:56:49] HIGH ALERT: Rare Port Activity detected from 216.239.32.223
+[23:56:49] HIGH ALERT: Rare Port Activity detected from 8.8.4.4
+[23:56:49] HIGH ALERT: Rare Port Activity detected from 34.54.84.110
+[23:56:59] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (24 packets) | Risk Score: 40
+[23:56:59] HIGH ALERT: Rare Port Activity detected from 216.239.32.223
+[23:56:59] HIGH ALERT: Rare Port Activity detected from 216.239.38.223
+[23:57:09] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (784 packets) | Risk Score: 90
+[23:57:09] CRITICAL ALERT: Traffic Flood detected from 216.239.38.223 (578 packets) | Risk Score: 90
+[23:57:09] MEDIUM ALERT: Traffic Flood detected from 34.54.84.110 (27 packets) | Risk Score: 40
+[23:57:09] HIGH ALERT: Rare Port Activity detected from 216.239.38.223
+[23:57:09] HIGH ALERT: Rare Port Activity detected from 34.54.84.110
+[23:59:52] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (42 packets) | Risk Score: 70
+[23:59:52] HIGH ALERT: Traffic Flood detected from 34.54.84.110 (60 packets) | Risk Score: 70
+[23:59:52] HIGH ALERT: Rare Port Activity detected from 34.54.84.110
+[00:00:03] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (71 packets) | Risk Score: 70
+[00:00:03] MEDIUM ALERT: Traffic Flood detected from 8.8.4.4 (33 packets) | Risk Score: 40
+[00:00:03] HIGH ALERT: Rare Port Activity detected from 8.8.4.4
+[00:00:03] HIGH ALERT: Rare Port Activity detected from 52.84.205.106
+[00:00:13] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (44 packets) | Risk Score: 70
+[00:00:13] HIGH ALERT: Rare Port Activity detected from 172.217.24.100
+[00:00:23] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (54 packets) | Risk Score: 70
+[00:00:23] MEDIUM ALERT: Traffic Flood detected from 34.54.84.110 (36 packets) | Risk Score: 40
+[00:00:23] HIGH ALERT: Rare Port Activity detected from 34.54.84.110
+[00:00:23] HIGH ALERT: Rare Port Activity detected from 142.250.207.78
+[00:00:33] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (37 packets) | Risk Score: 40
+[00:00:33] HIGH ALERT: Rare Port Activity detected from 8.8.4.4
+[00:00:44] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (105 packets) | Risk Score: 90
+[00:00:44] MEDIUM ALERT: Traffic Flood detected from 57.144.169.32 (31 packets) | Risk Score: 40
+[00:00:44] MEDIUM ALERT: Traffic Flood detected from 8.8.4.4 (35 packets) | Risk Score: 40
+[00:00:44] MEDIUM ALERT: Traffic Flood detected from 57.144.57.32 (22 packets) | Risk Score: 40
+[00:00:44] HIGH ALERT: Rare Port Activity detected from 57.144.169.32
+[00:00:44] HIGH ALERT: Rare Port Activity detected from 8.8.4.4
+[00:00:44] HIGH ALERT: Rare Port Activity detected from 57.144.57.32
+[00:00:44] HIGH ALERT: Rare Port Activity detected from 34.54.84.110
+[00:00:54] HIGH ALERT: Traffic Flood detected from 34.54.84.110 (45 packets) | Risk Score: 70
+[00:00:54] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (67 packets) | Risk Score: 70
+[00:00:54] HIGH ALERT: Rare Port Activity detected from 34.54.84.110
+[00:00:54] HIGH ALERT: Rare Port Activity detected from 8.8.4.4
+[00:01:04] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (99 packets) | Risk Score: 90
+[00:01:04] MEDIUM ALERT: Traffic Flood detected from 13.89.179.10 (28 packets) | Risk Score: 40
+[00:01:04] MEDIUM ALERT: Traffic Flood detected from 142.251.221.193 (21 packets) | Risk Score: 40
+[00:01:04] HIGH ALERT: Rare Port Activity detected from 8.8.4.4
+[00:01:04] HIGH ALERT: Rare Port Activity detected from 13.89.179.10
+[00:01:04] HIGH ALERT: Rare Port Activity detected from 216.239.38.223
+[00:01:04] HIGH ALERT: Rare Port Activity detected from 216.239.32.223
+[00:01:04] HIGH ALERT: Rare Port Activity detected from 142.251.221.193
+[00:01:14] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (57 packets) | Risk Score: 70
+[00:01:14] MEDIUM ALERT: Traffic Flood detected from 142.250.182.67 (23 packets) | Risk Score: 40
+[00:01:14] HIGH ALERT: Rare Port Activity detected from 8.8.4.4
+[00:01:14] HIGH ALERT: Rare Port Activity detected from 142.250.182.67
+[00:01:24] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (117 packets) | Risk Score: 90
+[00:01:24] MEDIUM ALERT: Traffic Flood detected from 34.54.84.110 (35 packets) | Risk Score: 40
+[00:01:24] MEDIUM ALERT: Traffic Flood detected from 216.239.38.223 (35 packets) | Risk Score: 40
+[00:01:24] MEDIUM ALERT: Traffic Flood detected from 192.178.211.84 (32 packets) | Risk Score: 40
+[00:01:24] HIGH ALERT: Rare Port Activity detected from 34.54.84.110
+[00:01:24] HIGH ALERT: Rare Port Activity detected from 216.239.32.223
+[00:01:24] HIGH ALERT: Rare Port Activity detected from 216.239.38.223
+[00:01:24] HIGH ALERT: Rare Port Activity detected from 8.8.4.4
+[00:01:24] HIGH ALERT: Rare Port Activity detected from 192.178.211.84
+[00:01:34] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (39 packets) | Risk Score: 40
+[00:01:44] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (83 packets) | Risk Score: 90
+[00:01:44] HIGH ALERT: Traffic Flood detected from 8.8.4.4 (42 packets) | Risk Score: 70
+[00:01:44] HIGH ALERT: Traffic Flood detected from 34.54.84.110 (53 packets) | Risk Score: 70
+[00:01:44] HIGH ALERT: Rare Port Activity detected from 8.8.4.4
+[00:01:44] HIGH ALERT: Rare Port Activity detected from 34.54.84.110
+[00:01:56] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (30 packets) | Risk Score: 40
+[00:02:06] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (40 packets) | Risk Score: 40
+[00:02:06] HIGH ALERT: Rare Port Activity detected from 142.250.207.78
+[00:02:16] CRITICAL ALERT: Traffic Flood detected from 10.229.47.68 (158 packets) | Risk Score: 90
+[00:02:16] CRITICAL ALERT: Traffic Flood detected from 8.8.4.4 (89 packets) | Risk Score: 90
+[00:02:16] MEDIUM ALERT: Traffic Flood detected from 34.54.84.110 (25 packets) | Risk Score: 40
+[00:02:16] MEDIUM ALERT: Traffic Flood detected from 142.251.222.131 (37 packets) | Risk Score: 40
+[00:02:16] HIGH ALERT: Rare Port Activity detected from 8.8.4.4
+[00:02:16] HIGH ALERT: Rare Port Activity detected from 34.54.84.110
+[00:02:16] HIGH ALERT: Rare Port Activity detected from 142.251.222.131
+[00:02:16] HIGH ALERT: Rare Port Activity detected from 216.239.38.223
+[00:02:27] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (64 packets) | Risk Score: 70
+[00:02:27] MEDIUM ALERT: Traffic Flood detected from 8.8.4.4 (22 packets) | Risk Score: 40
+[00:02:27] HIGH ALERT: Rare Port Activity detected from 8.8.4.4
+[00:02:27] HIGH ALERT: Rare Port Activity detected from 34.54.84.110
+[00:02:27] HIGH ALERT: Rare Port Activity detected from 52.84.205.106
+[00:02:37] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (43 packets) | Risk Score: 70
+[00:02:37] HIGH ALERT: Rare Port Activity detected from 142.250.207.78
+[00:02:48] HIGH ALERT: Traffic Flood detected from 10.229.47.68 (59 packets) | Risk Score: 70
+[00:02:48] HIGH ALERT: Traffic Flood detected from 34.54.84.110 (66 packets) | Risk Score: 70
+[00:02:48] HIGH ALERT: Rare Port Activity detected from 34.54.84.110
+[00:02:58] MEDIUM ALERT: Traffic Flood detected from 10.229.47.68 (35 packets) | Risk Score: 40
+[00:02:58] HIGH ALERT: Rare Port Activity detected from 8.8.4.4
